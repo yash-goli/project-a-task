@@ -1,0 +1,22 @@
+@import '../../App.css';
+
+.header {
+  grid-area: header;
+  padding: var(--app-padding);
+  background-color: var(--color-primary);
+}
+
+.header span {
+  color: var(--color-white);
+  font-size: var(--font-medium);
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    text-align: center;
+  }
+
+  .header span {
+    font-size: var(--font-large);
+  }
+}

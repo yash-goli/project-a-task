@@ -1,0 +1,23 @@
+@import '../../App.css';
+
+.formBody {
+  border: 2px solid var(--color-primary);
+  padding: calc(var(--app-padding) * 2) var(--app-padding);
+}
+
+@media screen and (min-width: 768px) {
+  .formBody {
+    width: var(--app-form-width);
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: var(--app-padding);
+  }
+
+  .button {
+    grid-column: 2/3;
+  }
+}

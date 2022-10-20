@@ -1,0 +1,22 @@
+@import '../../App.css';
+
+.label {
+  font-size: var(--font-medium);
+  color: var(--color-primary);
+  display: block;
+  padding-bottom: var(--app-padding);
+}
+
+.input {
+  font-size: var(--font-medium);
+  border: 2px solid var(--color-primary);
+  padding: var(--app-padding);
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: var(--app-padding);
+}
+
+.input:focus {
+  outline: none ;
+}
