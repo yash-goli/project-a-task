@@ -22,7 +22,7 @@ const Email = ({setEmail}: {setEmail: (email: string) => void}): React.ReactElem
   return (
     <>
       <label htmlFor="email">Email</label>
-      <input id="email" type="email" placeholder="Email" name='email' onChange={onHandleChange}/>
+      <input id="email" data-testid='email' type="email" placeholder="Email" name='email' onChange={onHandleChange}/>
       <ErrorList errorList={validityList}/>
     </>
   )

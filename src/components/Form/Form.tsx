@@ -21,7 +21,7 @@ const Form = () => {
           <Password setPassword={setPassword}/>
         </div>
         <div className={styles.button}>
-          <Button name="Submit" type="submit" disabled={!email && !password} />
+          <Button name="Submit" type="submit" disabled={!email || !password} />
         </div>
       </form>
     </div>

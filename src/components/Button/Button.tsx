@@ -9,7 +9,7 @@ interface ButtonProps {
 
 const Button = ({name, type, disabled}: ButtonProps): React.ReactElement => {
   return (
-    <button className={styles.button} type={type} disabled={disabled}>{name}</button>
+    <button data-testid="button" className={styles.button} type={type} disabled={disabled}>{name}</button>
   )
 };
 

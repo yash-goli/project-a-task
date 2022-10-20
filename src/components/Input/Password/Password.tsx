@@ -22,7 +22,7 @@ const Password = ({ setPassword }: { setPassword: (password: string) => void }):
   return (
     <>
       <label htmlFor="password">Password</label>
-      <input id="password" type="password" placeholder="Password" name='password' onChange={onHandleChange} />
+      <input id="password" data-testid="password" type="password" placeholder="Password" name='password' onChange={onHandleChange} />
       <ErrorList errorList={validityList}/>
     </>
   )
