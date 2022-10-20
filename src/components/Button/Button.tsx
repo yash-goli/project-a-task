@@ -4,11 +4,12 @@ import styles from "./Button.module.css";
 interface ButtonProps {
   name: string;
   type: 'button' | 'submit' | 'reset';
+  disabled: boolean
 }
 
-const Button = ({name, type}: ButtonProps): React.ReactElement => {
+const Button = ({name, type, disabled}: ButtonProps): React.ReactElement => {
   return (
-    <button className={styles.button} type={type}>{name}</button>
+    <button className={styles.button} type={type} disabled={disabled}>{name}</button>
   )
 };
 

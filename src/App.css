@@ -10,6 +10,8 @@
   --app-padding: 16px;
 
   --app-form-width: 600px;
+
+  --line-height: 24px;
 }
 
 .container {
@@ -29,9 +31,55 @@
   padding: var(--app-padding);
 }
 
+label {
+  font-size: var(--font-medium);
+  color: var(--color-primary);
+  display: block;
+  padding-bottom: var(--app-padding);
+}
+
+input {
+  font-size: var(--font-medium);
+  border: 2px solid var(--color-primary);
+  padding: var(--app-padding);
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: var(--app-padding);
+}
+
+input:focus {
+  outline: none ;
+}
+
+.validity-list {
+  line-height: var(--line-height);
+}
+
+.validity-list:last-of-type {
+  padding-bottom: calc(var(--app-padding) * 2);
+}
+
+.validity-list span {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.validity-list span.success {
+  color: var(--color-success);
+}
+
+.validity-list span.error {
+  color: var(--color-error);
+}
+
 @media screen and (min-width: 768px) {
   .main {
     justify-self: center;
     align-self: center;
+  }
+
+  .validity-list:last-of-type {
+    padding-bottom: var(--app-padding);
   }
 }

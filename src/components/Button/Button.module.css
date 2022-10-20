@@ -9,4 +9,5 @@
   box-sizing: border-box;
   width: 100%;
   font-size: var(--font-medium);
+  cursor: pointer;
 }
